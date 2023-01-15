@@ -214,7 +214,7 @@ import warnings
 import io
 warnings.filterwarnings('ignore')
 
-path = r'E:\Estudio\Análisis de datos\Proyectos\Big Mart Sales prediction/'
+#path = r'E:\Estudio\Análisis de datos\Proyectos\Big Mart Sales prediction/'
 
 st.code("""# Import the required libreries for the EDA
 import numpy as np
@@ -231,9 +231,9 @@ path = r'E:\Estudio\Análisis de datos\Proyectos\Big Mart Sales prediction/'""")
 @st.cache(allow_output_mutation=True)
 def read_csv():
     # Reading data from each csv file. 
-    train_df = pd.read_csv(path + 'train.csv', sep=',')
-    test_df = pd.read_csv(path + 'test.csv', sep=',')
-    submission_df = pd.read_csv(path + 'sample_submission.csv', sep=',')
+    train_df = pd.read_csv('train.csv', sep=',')
+    test_df = pd.read_csv('test.csv', sep=',')
+    submission_df = pd.read_csv('sample_submission.csv', sep=',')
     return train_df, test_df, submission_df
 
 train_df, test_df, submission_df = read_csv()
