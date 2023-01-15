@@ -41,7 +41,7 @@ This methodology aims to establish a series of activities to solve an analytical
 st.markdown('This metodology aims to answer ten different questions.')
 
 st.image('Methodology.PNG', width = 500, caption = 'Data Science Methodology - IBM')
-st.image('IBMSteps.PNG', width = 500, caption = 'Steps - IBM')
+st.image('https://github.com/FabianPedreros/BigMartSalesPredictionApp/blob/main/IBMSteps.png', width = 500, caption = 'Steps - IBM')
 
 st.markdown('## :blue[3. Theoretical framework]')
 
