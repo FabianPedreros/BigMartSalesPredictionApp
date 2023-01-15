@@ -41,7 +41,7 @@ This methodology aims to establish a series of activities to solve an analytical
 st.markdown('This metodology aims to answer ten different questions.')
 
 st.image('Methodology.PNG', width = 500, caption = 'Data Science Methodology - IBM')
-st.image('https://github.com/FabianPedreros/BigMartSalesPredictionApp/blob/main/IBMSteps.png', width = 500, caption = 'Steps - IBM')
+st.image('IBMSteps.png', width = 500, caption = 'Steps - IBM')
 
 st.markdown('## :blue[3. Theoretical framework]')
 
@@ -994,12 +994,12 @@ select the one with the best results.
 
 Here we have the metrics of our models:''')
 
-st.write('''
+st.write(f'''
 | Metric | 1. Linear regression | 2. Lasso regression| 3. Ridge regression| 4. Polynomial ridge regression|
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| R square train data | 0.563 |0.564|0.564|0.568|
-| R square test data | 0.561 |0.561|0.561|0.565|
-| Mean absolute error | 859.881 |860.591|860.453|849.860|
+| R square train data |{linreg_rs_train:.3f}|{lassoreg_rs_train:.3f}|{ridreg_rs_train:.3f}|{poly_lassoreg_rs_train:.3f}|
+| R square test data |{linreg_rs_test:.3f}|{lassoreg_rs_test:.3f}|{ridreg_rs_test:.3f}|{poly_lassoreg_rs_test:.3f}|
+| Mean absolute error |{linreg_mae:.3f}|{lassoreg_mae:.3f}|{ridreg_mae:.3f}|{poly_lassoreg_mae:.3f}|
 
 ''')
 
